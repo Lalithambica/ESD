@@ -77,7 +77,9 @@ export function stats(matrix) {
 // Section 12 (stretch) — the same shape, every cell 0.
 //   zeros([[1, 2], [3, 4]])  →  [[0, 0], [0, 0]]
 export function zeros(matrix) {
-  throw new Error("TODO");
+  return matrix.map((row) =>
+    row.map(() => 0)
+  );
 }
 
 // IN-LAB TASK (AI closed) — leave this until the lab. See inlab/decrement.check.jsx.

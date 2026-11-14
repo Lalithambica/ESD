@@ -32,6 +32,9 @@ export default function App() {
   return (
   <main className="app">
     <Header />
+    <button onClick={() => setMatrix((prev) => zeros(prev))}>
+      Reset
+    </button>
 
     <Matrix
       matrix={matrix}
