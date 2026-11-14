@@ -8,5 +8,26 @@
 //   redraws the screen.
 // - If the new value is the same (Object.is), it does nothing: no onChange.
 export function useState(initial, onChange) {
-  throw new Error("TODO");
+  let state = initial;
+
+  function getState() {
+    return state;
+  }
+
+  function setState(next) {
+    const newState =
+      typeof next === "function"
+        ? next(state)
+        : next;
+
+    // Same value → do nothing
+    if (Object.is(state, newState)) {
+      return;
+    }
+
+    state = newState;
+    onChange();
+  }
+
+  return [getState, setState];
 }
