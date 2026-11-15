@@ -17,7 +17,8 @@ prompt in full. One exception: if you pasted CONTRACT.md's prompt 1 unchanged, w
 **Sent:**
 
 ```text
-CONTRACT.md prompt 1, unchanged
+-Name and roll number:Chepuri Lalithambica, MT2026019
+- AI tool and plan: ChatGPT
 ```
 
 **What came back:** (which files; which hooks it used; anything from the "not yet" list;
